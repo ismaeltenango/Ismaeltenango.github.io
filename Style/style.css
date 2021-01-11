@@ -55,6 +55,10 @@ a:active {
   width: 100px;
 }
 
+#currentdate {
+  color:rgb(255, 0, 0);
+}
+
 
 @media screen and (max-width: 550px) {
   .grid{
