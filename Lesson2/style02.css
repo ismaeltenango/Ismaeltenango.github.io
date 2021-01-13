@@ -1,0 +1,56 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+footer{
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.topic{
+    grid-column: 1/2;
+    grid-row: 2/end;
+}
+
+.topic2{
+    grid-column: 2/3;
+    grid-row: 2/end;
+}
+
+.topic3{
+    grid-column: 3/4;
+    grid-row: 2/end;
+}
+
+header{
+    background-color: blue;
+    text-align: center;
+}
+
+.boxes{
+    border-radius: 1em;
+    text-align: center;
+    background-color: #aaa;  
+}
+
+.title{
+    background-color: green;
+}
+
+a {
+    background-color: rgba(40, 204, 40, 0.767);
+    text-align: left;
+    text-decoration:#fff;
+}
+
+.text{
+    margin: 1em;
+}
+
+img {
+    max-width: 90%;
+}
