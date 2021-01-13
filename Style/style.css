@@ -2,22 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Concert+One&display=swap'); /*Text*/
 
 
-.grid{
-  display: grid;
-  justify-content: center;
+header,
+main,
+footer{
+  max-width: 45em;
+  margin: 0 auto;
+  padding: .50em;
 }
 
-.name{
+body{
+  line-height: 2;
+  height: 100%;
+}
+
+header {
+  text-align: center;
   color: darkblue;
   background-color: lightblue;
   text-align: center;
-  border-radius: 10px;
+}
+
+h1{
+  font-size: 1.5em;
+  font-family: "Concert One", Helvetica, Arial;
 }
 
 h2{
   color: rgb(189, 38, 38);
-  font-family: "Concert One", Helvetica, Arial;
   border-bottom: 1px solid rgb(179, 49, 49);
+  font-size: 1em;
 }
 
 footer{
@@ -25,8 +38,7 @@ footer{
   background-color: lightblue;
   align-items: center;
   text-align: center;
-  border-radius:10px;
-  margin-top: 3em;
+  font-family: "Baloo 2", sans-serif, Arial;
 }
 
 main {
@@ -39,33 +51,16 @@ a:active {
   border-bottom: 2px solid red;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 1.3s;
-  letter-spacing: 1px;
+  transition: all .5s;
+  letter-spacing: .5px;
   color: rgb(236, 11, 11);
 }
 
-.portrait{
-  float: right;
-  box-shadow: 1px 1px 10px 1px #888;
-  border-radius: 1em;
-  margin-left: 10px;
-  margin-top: -30px;
-  margin-right: 10px;
-  z-index: -5;
-  width: 100px;
+header img{
+  width: 200px;
+  margin-top: 2em;
 }
 
 #currentdate {
   color:rgb(255, 0, 0);
-}
-
-
-@media screen and (max-width: 550px) {
-  .grid{
-    display: block;
-  }
-
-  footer {
-    display: block;
-  }
 }
