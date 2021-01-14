@@ -6,9 +6,14 @@
     padding: 2em;
 }
 
+body {
+    font-family: 'Poppins', monospace, sans-serif;
+}
+
 footer{
     text-align: center;
     background-color: lightgreen;
+    border-radius: 0px 0pc 1em 1em;
 }
 
 .topic{
@@ -27,8 +32,10 @@ footer{
 }
 
 header{
-    background-color: blue;
+    background-color: rgb(73, 73, 138);
     text-align: center;
+    font-family: 'Yusei Magic', sans-serif, serif;
+    border-radius: 1em 1em 0px 0px;
 }
 
 .boxes{
@@ -41,10 +48,11 @@ header{
     background-color: green;
 }
 
-a {
-    background-color: rgba(40, 204, 40, 0.767);
+a:hover {
     text-align: left;
-    text-decoration:#fff;
+    text-transform: lowercase;
+    transition: all .5s;
+    letter-spacing: .5px;
 }
 
 .text{
@@ -52,5 +60,7 @@ a {
 }
 
 img {
+    margin-top: 1em;
     max-width: 90%;
+    border-radius: .5em;
 }
