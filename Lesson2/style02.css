@@ -32,7 +32,7 @@ footer{
 }
 
 header{
-    background-color: rgb(73, 73, 138);
+    background-color: rgb(99, 99, 133);
     text-align: center;
     font-family: 'Yusei Magic', sans-serif, serif;
     border-radius: 1em 1em 0px 0px;
@@ -63,4 +63,9 @@ img {
     margin-top: 1em;
     max-width: 90%;
     border-radius: .5em;
+}
+
+h1, h2{
+    font-size: 1,5em;
+    color: rgb(179, 175, 175);
 }
