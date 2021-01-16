@@ -7,5 +7,28 @@
     background-color: gold;
     box-sizing: 2em;
     padding: 20px 20px;
-    border
- }
+}
+
+
+.class{
+    background-color: #a86565;
+    margin: auto;
+    font-size: 2em;
+    text-align: left;
+}
+
+p.hi {
+    text-align: center;
+    background-color: blue;
+}
+
+#id{
+    background-color: #44a060;
+    margin: auto;
+    font-size: 2em;
+    text-align: right;
+}
+
+#lol{
+    font-size: 3em;
+}
