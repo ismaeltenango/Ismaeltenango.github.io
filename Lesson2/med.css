@@ -17,7 +17,7 @@
     
     .topic3{
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 3/end;
     }
 
     @media only screen and (max-width : 600px) {
