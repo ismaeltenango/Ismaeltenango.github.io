@@ -12,7 +12,8 @@ body {
 
 footer{
     text-align: center;
-    background-color: lightgreen;
+    background-color: rgb(99, 99, 133);
+    color: rgb(179, 175, 175);
     border-radius: 0px 0pc 1em 1em;
 }
 
