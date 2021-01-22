@@ -10,41 +10,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Itim&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header><h1> &#x2602; itscooloutside.com<br>Weather Website</h1>
     <img
-      src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-09-512.png"
-      alt="itscooloutside icon" height="128px"
-    />
-  <h1> &#x2602; itscooloutside.com Weather Website</h1>
+        src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-09-512.png"
+        alt="itscooloutside icon" height="128px"
+      /></header>
   <nav>
     <ul>
-        <li><a href="https://ismaeltenango.github.io/">HOME</a></li>
-        <li><a href="index1.html">WEATHER SITE</a></li>
+        <li><a href="index1.html">WEATHER</a></li>
         <li><a href="target-audience.html">AUDIENCE</a></li>
-        <li><a href="color-scheme.html">COLOR SCHEME</a></li>
+        <li><a href="color-scheme.html">COLOR</a></li>
         <li><a href="typography.html">TYPOGRAPHY</a></li>
     </ul>
   </nav>
+  <main>
   <p class='itim'> 
-    <strong>HEADINGS</strong>: Itim<br>
+    <strong>HEADINGS:</strong><br>Itim<br>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
     Ipsa quidem ducimus assumenda quisquam molestiae voluptatibus delectus veritatis 
     architecto, quibusdam quo ea culpa voluptatem corrupti labore voluptatum reiciendis 
     fuga distinctio suscipit.
    
-</p>
+    </p>
 
   <p class='bellota'> 
-    <strong>TEXT</strong>: Bellota Text<br>
+    <strong>TEXT:</strong><br>Bellota Text<br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Ipsa quidem ducimus assumenda quisquam molestiae voluptatibus delectus veritatis 
       architecto, quibusdam quo ea culpa voluptatem corrupti labore voluptatum reiciendis 
       fuga distinctio suscipit.
       
-</p>
+  </p>
+  </main>
+<footer>
+  &copy <span id='copyrightyear'></span> | Ismael Moises Tenango Anaya | Rexburg | <a href= 'https://www.byui.edu/online'>BYU-I Student</a><br>
+  <span id="currentdate"></span>
+</footer>
 
-  <div id="footer">
-    Footer
-    https://coolors.co/9b592d-637966-e0d8d0-9e5160-b1b8c5-1d2e53
-  </div>
+<script>
+
+  window.addEventListener('load', (event)=>{
+      const lu = document.querySelector('#currentdate');
+      lu.textContent = document.lastModified;
+  
+      const cry = document.querySelector('#copyrightyear');
+      cry.textContent = new Date().getFullYear();
+  })
+  
+  </script>
 </body>
 </html>
