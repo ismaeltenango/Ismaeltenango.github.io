@@ -37,12 +37,12 @@ border-radius: 20px;
 }
 
 .top {
-    display: grid;
-    background-color: #001b36;
-    color:#fff;
-    grid-row: 2/3;
-    text-align: center;
-    grid-template-columns: 108px;
+display: grid;
+background-color: #001b36;
+color:#fff;
+grid-row: 2/3;
+text-align: center;
+grid-template-columns: 108px;
 }
 
 .middle{
@@ -64,23 +64,23 @@ background-color: #e0e0e0;
 }
 
 .left{
-    grid-template-columns: 108px;
+grid-template-columns: 108px;
 grid-column: 1/2;
 }
 
 .icon{
-    grid-template-columns: 108px;
+grid-template-columns: 108px;
 grid-column: 2/3;
 font-size: 32px;
 }
 
 .center{
-    grid-template-columns: 108px;
+grid-template-columns: 108px;
 grid-column: 2/3;
 }
 
 .right{
-    grid-template-columns: 108px;
+grid-template-columns: 108px;
 grid-column: 3/4;
 }
 
@@ -106,8 +106,8 @@ font-size: 8px;
 }
 
 .thanks{
-    padding: 20px;
-    margin: 0 auto;
-    color: #524444;
+padding: 20px;
+margin: 0 auto;
+color: #524444;
 }
 
