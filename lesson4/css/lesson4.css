@@ -1,0 +1,53 @@
+header {
+    text-align: center;
+    background-color:  #B1B8C5;
+    padding: 20px;
+    margin: 20px 2%;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: 'Itim', sans-serif, monospace;
+}
+
+nav {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e0d8d0+0,9e5160+100 */
+background: #e0d8d0; /* Old browsers */
+background: -moz-linear-gradient(top,  #e0d8d0 0%, #9e5160 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e0d8d0 0%,#9e5160 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e0d8d0 0%,#9e5160 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0d8d0', endColorstr='#9e5160',GradientType=0 ); /* IE6-9 */
+}
+
+nav {
+    margin: 20px 2%;
+    margin-top: -23px;
+    padding: 0%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+img.banner{
+    width: 100%;
+}
+
+p {
+    font-family: 'Itim', sans-serif, monospace;
+    background-color: #E0D8D0;
+    text-align: center;
+}
+
+footer{
+    background-color:  #B1B8C5;
+    margin: 20px 2%;
+}
