@@ -1,73 +1,113 @@
+
 body {
-    background-color:  #cfcfcf; 
+background-color:  #cfcfcf;
+margin-top: 50px;
 }
 
 img {
-    width: 100px;
+width: 100px;
 }
 
 .name {
-    float: right;
+float: right;
+font-size: small;
+color:  #524444;
+margin:0 auto;
+}
+
+h5{
+margin-top: 0;
 }
 
 header{
-    background-color: #f1f1f1;
-    margin-bottom: -16px;
-    grid-row: 1/2;
-    border-radius:10px;
-    padding: 20px;
-    background-color: rgb(240, 236, 236);
+margin-bottom: -16px;
+grid-row: 1/2;
+border-radius: 50px;
+padding: 20px;
+background-color: rgb(240, 236, 236);
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    background-color: #f1f1f1;
-    font-family: helvetica;
-    border-radius: 20px;
+grid-template-columns: 1fr;
+max-width: 324px;
+margin: 0 auto;
+background-color: #f1f1f1;
+font-family: helvetica;
+border-radius: 20px;
 }
 
-.top{
+.top {
     display: grid;
     background-color: #001b36;
     color:#fff;
     grid-row: 2/3;
     text-align: center;
+    grid-template-columns: 108px;
 }
 
 .middle{
-    display: grid;
-    background-color: #f1f1f1;
-    grid-row: 3/4;
-    text-align: center;
+display: grid;
+background-color: #f1f1f1;
+grid-row: 3/4;
+text-align: center;
+grid-template-columns: 108px;
+background-color: #e0e0e0;
 }
 
 .low{
-    display: grid;
-    background-color: #f1f1f1;
-    grid-row: 4/5;
-    text-align: center;
+display: grid;
+background-color: #f1f1f1;
+grid-row: 4/5;
+text-align: center;
+grid-template-columns: 108px;
+background-color: #e0e0e0;
 }
 
 .left{
-    grid-column: 1/2;
+    grid-template-columns: 108px;
+grid-column: 1/2;
+}
+
+.icon{
+    grid-template-columns: 108px;
+grid-column: 2/3;
+font-size: 32px;
 }
 
 .center{
-    grid-column: 2/3;
+    grid-template-columns: 108px;
+grid-column: 2/3;
 }
 
 .right{
-    grid-column: 3/4;
+    grid-template-columns: 108px;
+grid-column: 3/4;
 }
 
 .code{
-    grid-row: 5/6;
-    text-align: center;
+grid-row: 5/6;
+text-align: center;
+font-size: 10px;
+margin-top: 10px;
 }
 
 .bar {
-    width: 75%;
-    font-family: helvetica;
+width: 50%;
+font-family: helvetica;
 }
+
+.little{
+font-size: 8px;
+color:  #cfcfcf;
+}
+
+.little2{
+font-size: 8px;
+}
+
+.thanks{
+    padding: 20px;
+    margin: 0 auto;
+    color: #524444;
+}
+
