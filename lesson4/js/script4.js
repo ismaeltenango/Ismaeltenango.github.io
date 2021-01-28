@@ -7,7 +7,6 @@ window.addEventListener('load', (event)=>{
 })
 
 function toggleMenu() {
-   
-    document.getElementById('primariNav').classList.toggle('hide');
+   document.getElementById('primariNav').classList.toggle('hide');
 }
 
