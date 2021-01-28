@@ -108,6 +108,11 @@ main{
     text-align: center;
 }
 
+.title{
+    text-align: center;
+    margin: 0 auto;
+}
+
 img.banner{
     width: 100%;
 }
