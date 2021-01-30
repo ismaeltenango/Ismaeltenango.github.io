@@ -77,15 +77,22 @@ nav ul li.active a {
 }
 
 @keyframes shake {
-    30% { transform: translate(1px, 3px) rotate(1deg); } 
-    20% { transform: translate(3px, 1px) rotate(-1deg); }  
+    10% { transform: translate(1px, 1px) rotate(1deg); } 
+    20% { transform: translate(1px, 1px) rotate(-1deg); }
+    30% { transform: translate(1px, 1px) rotate(1deg); } 
+    40% { transform: translate(1px, 1px) rotate(-1deg); } 
+    50% { transform: translate(1px, 1px) rotate(1deg); } 
+    60% { transform: translate(1px, 1px) rotate(-1deg); } 
+    70% { transform: translate(1px, 1px) rotate(1deg); } 
+    80% { transform: translate(1px, 1px) rotate(-1deg); } 
+    90% { transform: translate(1px, 1px) rotate(1deg); } 
+    100% { transform: translate(1px, 1px) rotate(-1deg); } 
 }
 
 nav ul li a:hover{
-    transition: all .8s;
-    letter-spacing: 1px;
-    animation: shake 0.5s;
-    animation-iteration-count: 1s;
+    transition: all 1.5s;
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
     background-color: rgba(131, 75, 75, 0.5);
     color: rgba(255, 255, 255, 0.555);
 }
@@ -145,6 +152,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c3d6', end
     clear: both;
   }
 
+@media only screen and (min-width: 1050px){
+
+    h1{
+        text-align: center;
+        margin-right: 6em;
+    }
+
+}
+
 @media only screen and (min-width: 750px){
 
     header {
@@ -157,9 +173,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c3d6', end
     }
 
     h1 {
-        margin-top: 15px;
+        text-align: center;
         grid-column: 2/3;
-        margin-right: 7em;
+        margin-right: 5em;
     }
 
     nav button {
