@@ -1,8 +1,10 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-
-
+body{
+    background-image: url("../images/backgrounfsite.jpg");
+    background-color: #cccccc;
+}
 
 header {
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#597fc1+0,c2c3d6+100 */
@@ -25,7 +27,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#597fc1', end
 }
 
 h1 {
-    margin-top: 0;
+
     color: #1D2E53;
     font-family: 'Itim', sans-serif, monospace;
 }
@@ -99,7 +101,7 @@ nav ul li a:hover{
 
 nav ul.hide {
     display: none;
-    transition: all 8s;
+    transition: all 1s;
     animation: shake 0.5s;
 }
 
@@ -112,7 +114,6 @@ nav {
 
 main{
     margin: 20px 7%;
-    text-align: center;
 }
 
 .title{
@@ -126,19 +127,68 @@ img.banner{
 
 p {
     font-family: 'Itim', sans-serif, monospace;
-    background-color: #E0D8D0;
+}
+
+h2{
+    color: #1D2E53;
+    font-family: 'Itim', sans-serif, monospace;
+}
+
+.summary{
+    background-color: rgba(230, 185, 164, 0.6);
+    border-radius: 20px;
+    border-top: solid rgba(255, 81, 0, 0.404);
+    border-left: solid rgba(255, 81, 0, 0.404);
+    padding: 1em;
+    margin-top: 10px;
+    color: #1D2E53;
     text-align: center;
+}
+
+.forecast{
+    background-color: rgba(230, 185, 164, 0.6);
+    border-radius: 0 0 20px 20px;
+    border: dashed 3px rgba(255, 0, 0, 0.678);
+    padding: 1em;
+    margin-top: 10px;
+    color: #1D2E53;
+    text-align: center;
+}
+
+.forecastttle{
+    background-color: rgba(248, 110, 122, 0.63);
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    margin-top: 2em;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.articule{
+    background-color: rgba(230, 185, 164, 0.6);
+    border-radius: 20px;
+    border-top: solid rgba(255, 81, 0, 0.404);
+    border-left: solid rgba(255, 81, 0, 0.404);
+    padding: 1em;
+    margin-top: 50px;
+    color: #1D2E53;
+    text-align: center;
+}
+
+.articule img{
+    float:right;
+    padding: 10px;
 }
 
 footer{
     text-align: center;
     color: #1D2E53;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c2c3d6+0,597fc1+100 */
-background: #c2c3d6; /* Old browsers */
-background: -moz-linear-gradient(top,  #c2c3d6 0%, #597fc1 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #c2c3d6 0%,#597fc1 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #c2c3d6 0%,#597fc1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c3d6', endColorstr='#597fc1',GradientType=0 ); /* IE6-9 */
+    background: #c2c3d6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c2c3d6 0%, #597fc1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #c2c3d6 0%,#597fc1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #c2c3d6 0%,#597fc1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c3d6', endColorstr='#597fc1',GradientType=0 ); /* IE6-9 */
 
     margin: 20px 2%;
     padding: 1em;;
@@ -146,17 +196,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c3d6', end
     box-shadow: 1px 1px 1px 1px #888;
 }
 
+.contact {
+    background-color: rgba(65, 80, 161, 0.3);
+    border-radius: 20px;
+    border: dashed 1px rgba(39, 7, 168, 0.76);
+}
+
+footer a{
+    text-decoration: none;
+}
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
 
 @media only screen and (min-width: 1050px){
 
     h1{
         text-align: center;
         margin-right: 6em;
+    }
+
+    nav ul{
+        margin-left: 14em;
     }
 
 }

@@ -1,0 +1,52 @@
+
+@media only screen and (min-width: 1050px){
+
+    h1{
+        text-align: center;
+        margin-right: 6em;
+    }
+
+    nav ul{
+        margin-left: 14em;
+    }
+
+}
+
+@media only screen and (min-width: 750px){
+
+    header {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    img.logo {
+       margin-left: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        grid-column: 2/3;
+        margin-right: 5em;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+    nav ul li{
+        margin-left: 2%;
+    }
+
+}

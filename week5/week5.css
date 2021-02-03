@@ -1,6 +1,3 @@
-#pircing-main {
-
-}
 
 #fullwidth {
     width: 100%;
@@ -64,39 +61,90 @@
 }
 
 /*--------ice card activity---------*/
+.card{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
 
 .photo{
     width: 500px;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
     position: relative;
 }
 
 .box{
-    grid-column: 1;
-    grid-row: 2/3;
+    margin: 0 auto;
+    width: 460px;
+    position: absolute;
+    right: 0px;
+    top: 49.5%;
+    left: 0%;
+    background: rgb(12,5,43);
+    background: linear-gradient(180deg, rgba(12,5,43,0) 23%, rgba(107,107,189,1) 85%);
+    padding: 20px;
 }
 
 .arrowleft{
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
-    height: 40px;
-    top: 5%;
-    left: 5%;
+    height: 60px;
+    top: 10%;
+    left: 40%;
     z-index: 6;
 }
 
 .arrowright{
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
-    height: 40px;
-    top: 5%;
-    left: 65%;
+    height: 60px;
+    top: 10%;
+    left: 58.5%;
     z-index: 6;
 }
 
 p{
-    background-color: lightskyblue;
     color: white;
+    font-family: Helvetica, sans-serif;
+    opacity: .8;
 }
+
+h1{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 4em;
+    margin-bottom: 0;
+    opacity: .8;
+}
+
+h2{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    margin-top: -10px;
+    font-size: 1.7em;
+    opacity: .8;
+}
+
+.pic1{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.pic2{
+    width: 100px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.pic3{
+    width: 100px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.pic4{
+    width: 100px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+

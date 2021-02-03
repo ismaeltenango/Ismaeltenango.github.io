@@ -6,19 +6,21 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../Style/normalize.css">
-    <link rel="stylesheet" href="css\lesson4.css"> 
-    <link rel="stylesheet" href="lesson4\css\medium4.css"> 
+    <link rel="stylesheet" href="../lesson4/css/lesson4.css"> 
+    <link rel="stylesheet" href="../css/medium4.css"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Itim&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<div class='heroheader'>
 <header>
     <img class='logo'
         src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-09-512.png"
         alt="itscooloutside icon" height="100px">
     <h1> Itscooloutside.com<br><p class='sub'>Get out lazy guy!</p></h1>
 </header>
+</div>
+
     
     <nav class='clearfix'>
         <button onclick='toggleMenu()'>&#9776;</button>
@@ -39,18 +41,65 @@
         <img class='banner'
         src="../lesson4/images/banner2.png"
         alt="itscooloutside icon" height="128px">
-        <p>CONTENT BOX</p>
-        <p>CONTENT BOX</p>
-        <p>CONTENT BOX</p>
-        <p>CONTENT BOX</p>
+        <section class='summary'>
+            <h2><strong>Weather Summary</strong></h2>
+            <p>Temperature:    5 &#8451;</p>
+            <p>Humility:    63%</p>
+            <p>Wind:    21 km/h</p>
+        </section>
+        
+        <h2 class='forecastttle'><strong>Five Days Forecast</strong></h2>
+        <section class='forecast'>
+            <p>Monday: 5 &#8451;</p>
+            <p>Tuesday: 0 &#8451;</p>
+            <p>Wednesday: -2 &#8451;</p>
+            <p>Thursday: -6 &#8451;</p>
+            <p>Friday: 9 &#8451;</p>
+        </section>
+
+        <section class='articule'>
+            <h2><strong>Activities to do TODAY!</strong></h2>
+            <img class='flag'
+                src="../lesson4/images/flaggame.png"
+                alt="flag " height="100px">
+            <p>1.Start all players at a neutral location on the 
+                edge of the playing area. When the game begins, players try to cross 
+                into opposing teams' territories to grab their flags. ...</p>
+            <p> 2.Teams should not guard their flags too closely. ...</p>
+            <p>3.When a player is in an opposing team's territory, 
+                they can be captured by that team's players.</p>
+
+        </section>
+    
     </main>
     
     <footer>
+        <div class='contact'>
+            <p class='info' > &#9993; ten20007@byui.edu<br>&#x260E; 801-555-55-25<br>&#x1f4cc; Cuautla, Morelos, México</p>
+
+            <img class='map' src='../lesson4/images/map.JPG'alt='screenshot preston' height="150px">
+        <ul>
+            <li>
+        <a href="https://www.instagram.com/98_ismael/" target="_blank">
+            <img class='instagram' src='../lesson4/images/instagram.png'alt='instagram logo' height="50px">
+        </a></li>
+
+        <li><a href="https://www.facebook.com/ismaelmoises.tenangoanaya" target="_blank">
+            <img class='facebook' src='../lesson4/images/facebook.png'alt='facebook logo' height="50px">
+        </a></li>
+
+        <li><a href="https://github.com/ismaeltenango/Ismaeltenango.github.io" target="_blank">
+            <img class='github' src='../lesson4/images/guthub.png'alt='github logo' height="50px">
+            </a>
+            </li>
+        </ul>
+        </div>
         &copy <span id='copyrightyear'></span> | Ismael Moises Tenango Anaya | Rexburg | <a href= 'https://www.byui.edu/online'>BYU-I Student</a><br>
         <span id="currentdate"></span>
       </footer>
   
 <script src="../lesson4/js/script4.js"></script>
+
 </body>
     
 
