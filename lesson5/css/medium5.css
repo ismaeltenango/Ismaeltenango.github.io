@@ -1,3 +1,4 @@
+
 @media only screen and (min-width: 1050px){
 
     h1{
@@ -53,12 +54,12 @@
         position: relative;
         height: 250px;
         border-radius: 10px;
-        opacity: .85;
+        opacity: .95;
     }
 
     .summary{
         position: absolute;
-        top: 240px;
+        top: 235px;
         left: 10%;
         background: radial-gradient(rgba(252, 248, 248, 0.733), #2e30b38a);
         border: solid rgba(255, 81, 0, 0.26);
@@ -85,7 +86,7 @@
     }
 
     .map{
-        width: 30%;
+        width: 20%;
         height: 80%;
         border-radius: 15px;
     }
