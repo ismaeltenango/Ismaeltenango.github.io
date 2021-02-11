@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Assingments WDD 230</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../Style/normalize.css">
+    <link rel="stylesheet" href="../lesson6/css/lesson6.css"> 
+    <link rel="stylesheet" href="../lesson6/css/medium6.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p id='pancake'>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+<div class='heroheader'>
+<header>
+    <img class='logo'
+        src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-09-512.png"
+        alt="itscooloutside icon" height="100px">
+    <h1> Itscooloutside.com<br><p class='sub'>Get out lazy guy!</p></h1>
+</header>
+</div>
+    <nav class='clearfix'>
+        <button onclick='toggleMenu()'>&#9776;</button>
+        <ul id='primariNav' class='hide'>
+            <li><a href="https://ismaeltenango.github.io/">home</a></li>
+            <li class='active'><a href="#">preston</a></li>
+            <li><a href="#">soda springs</a></li>
+            <li><a href="#">fish heaven</a></li> 
+            <li><a href="#">storm center</a></li>
+            <li><a href="#">gallery</a></li>     
+        </ul>
+    </nav>
+    <main>
+        <h1 class='title'>Preston Idaho</h1>
+        <picture class ='banner'>
+            <source media='(max-width:400px)'  srcset='../lesson6/images/heroimage200px.jpg'>
+            <source media='(max-width:700px)'  srcset='../lesson6/images/heroimage500px.jpg'>
+            <source media='(max-width:1000px)'  srcset='../lesson6/images/heroimage800px.jpg'>
+            <img class='banner' src="../lesson6/images/heroimage.jpeg" alt="itscooloutside icon">
+        </picture>
+        <section class='summary'>
+            <h2><strong>Weather Summary</strong></h2>
+            <p>Temperature:    <span id='temp'>18</span> &#8457;</p>
+            <p>Wind:    <span id='speed'>10</span> mph</p>
+            <p>Wind Chill: <span id="windchill"></div></span> &#8457;</p>
+            <p>Humility:    63%</p>
+        </section>
+        
+        <h2 class='forecastttle'><strong>Five Days Forecast</strong></h2>
+        <section class='forecast'>
+        <p class='day1'>Monday: 5 &#8457;</p>  
+        <p class='day2'>Tuesday: 0 &#8457;</p>
+        <p class='day3'>Wednesday: -2 &#8457;</p>
+        <p class='day4'>Thursday: -6 &#8457;</p>
+        <p class='day5'>Friday: 9 &#8457;</p>
+    
+        </section>
+
+        <section class='articule'>
+            <h2><strong>Activities to do TODAY!</strong></h2>
+            <img class='flag'
+                src="../lesson6/images/flaggame.png"
+                alt="flag " height="100px">
+            
+            <p>1.Start all players at a neutral location on the 
+                edge of the playing area. When the game begins, players try to cross 
+                into opposing teams' territories to grab their flags...</p>
+            <p> 2.Teams should not guard their flags too closely...</p>
+            <p>3.When a player is in an opposing team's territory, 
+                they can be captured by that team's players.</p>
+            
+        </section>
+    
+    </main>
+    
+    <footer>
+        <div class='contact'>
+            <p class='info' > &#9993; ten20007@byui.edu<br>&#x260E; 801-555-55-25<br>&#x1f4cc; Cuautla, Morelos, México</p>
+
+            <img class='map' src='../lesson6/images/map.JPG'alt='screenshot preston'>
+        
+        <div class='links'>
+        <a href="https://www.instagram.com/98_ismael/" target="_blank">
+            <img class='instagram' src='../lesson6/images/instagram.png'alt='instagram logo' height="35px">
+        </a>
+
+        <a href="https://github.com/ismaeltenango/Ismaeltenango.github.io" target="_blank">
+            <img class='github' src='../lesson6/images/guthub.png'alt='github logo' height="35px">
+            </a>
+
+        <a href="https://www.facebook.com/ismaelmoises.tenangoanaya" target="_blank">
+            <img class='facebook' src='../lesson6/images/facebook.png'alt='facebook logo' height="35px">
+        </a>
+
+        </div>
+        
+        </div>
+        &copy <span id='copyrightyear'></span> | Ismael Moises Tenango Anaya | Rexburg | <a href= 'https://www.byui.edu/online'>BYU-I Student</a><br>
+        <span id="currentdate"></span>
+        
+      </footer>
+      <script src="../lesson6/js/script6.js"></script>
+      <script src="../lesson6/js/windchill.js"></script>
+
+</body>
+</body>
+</html>
