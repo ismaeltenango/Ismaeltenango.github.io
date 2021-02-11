@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../Style/normalize.css">
     <link rel="stylesheet" href="../lesson6/css/lesson6.css"> 
     <link rel="stylesheet" href="../lesson6/css/medium6.css"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Itim&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Itim&display=swap" rel="stylesheet">   TAKE IT OUT FOR THE  FONT LOADER     -->
 </head>
 <body>
     <p id='pancake'>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
@@ -103,7 +103,11 @@
       </footer>
       <script src="../lesson6/js/script6.js"></script>
       <script src="../lesson6/js/windchill.js"></script>
-
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+        WebFont.load({google: {families: ["Itim"]}});
+        WebFont.load({google: {families: ['Bellota Text']}});
+      </script>
 </body>
 </body>
 </html>
