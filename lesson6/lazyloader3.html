@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
-        <title>LAZYLOADER 1</title>
+        <title>LAZYLOADER 3</title>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="../favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
     <style>
 .loading{
     background-color: lightgray;
@@ -22,7 +21,7 @@
     height: 100%;
     width: 400px;
     background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
-    animation: load 3s;
+    animation: load 1s;
     z-index: 50;
 }
 .placeholder-loading{
@@ -36,31 +35,21 @@
         left:-400px;
     }
     100%{
-        left:100;
+        left:100%;
     }
-}
     </style>
-    <script>
-        window.addEventListener('load', (event)=>{
-            lazyLoad();
-        });
-            function lazyLoad(){
-                const images = document.querySelectorAll('[data-src]');
-                for(const image of images){
-                    image.src = image.getAttribute('data-src');
-            }
-        }
-    </script>
-  <body>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/400"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/401"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/402"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/403"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/404"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/405"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/406"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/407"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/408"></div>
-      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/409"></div>
+}
+</head>
+    <body>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/400"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/401"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/402"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/403"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/404"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/405"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/406"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/407"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/408"></div>
+      <div class="placeholder-loading"><img alt="" class="loading" src="http://unsplash.it/409"></div>
   </body>
 </html>

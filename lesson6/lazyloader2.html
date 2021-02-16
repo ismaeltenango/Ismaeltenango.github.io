@@ -3,53 +3,63 @@
     <head>
         <title>LAZYLOADER 2</title>
         <meta charset="utf-8">
-        <link rel="shortcut icon" href="../favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <style>
-.loading{
-    background-color: lightgray;
-    min-width: 400px;
-    min-height: 400px;
-    position: relative;
-}
-.placeholder-loading::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -400px;
-    top: 0;
-    height: 100%;
-    width: 400px;
-    background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
-    animation: load 3s;
-    z-index: 50;
-}
-.placeholder-loading{
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-
-@keyframes load {
-    0% {
-        left:-400px;
-    }
-    100%{
-        left:100;
-    }
-}
+        img {
+            border: 5px solid gold;
+            width: 400px;
+            height: 150px;
+            background-color: lightgray;
+        }
+        
+        body{
+            margin-bottom: 500px;
+        }
     </style>
+    <script>
+        window.addEventListener('load', (event)=>{
+            const images = document.querySelectorAll("[data-src]");
+
+            function preloadImage(img){
+                console.log('trying to load '+img);
+                const src= img.getAttribute('data-src');
+                if(!src){
+                    return;
+                }
+                img.src= src;
+            }
+            const imgOptions = {
+                threshold:0,
+                rootMargin: '0px 0px 200px 0px'
+            }
+            const imgObserver = new IntersectionObserver( (entries, imgObserver)=> {
+                console.log(entries);
+                entries.forEach(entry=>{
+                    if(!entry.isIntersecting){
+                        return;
+                    }
+                    else {
+                        preloadImage(entry.target);
+                        imgObserver.unobserve(entry.target);
+                    }
+                })
+            },imgOptions);
+            images.forEach(image=>{
+                imgObserver.observe(image);
+            });
+        });
+    </script>
   <body>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/400"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/401"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/402"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/403"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/404"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/405"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/406"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/407"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/408"></div>
-      <div class="placeholder-loading"><img loading ='lazy' alt="" class="loading" src="http://unsplash.it/409"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/400"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/401"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/402"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/403"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/404"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/405"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/406"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/407"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/408"></div>
+      <div class="placeholder-loading"><img src="" alt="" class="loading" data-src="http://unsplash.it/409"></div>
   </body>
 </html>
