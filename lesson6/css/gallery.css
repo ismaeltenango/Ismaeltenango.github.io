@@ -219,7 +219,7 @@ figure img{
     max-width: 325px;
     border-radius: 7px 7px 0 0;
 }
-/*
+
 .shadow{
     background-color: lightgray;
     min-width: auto;
@@ -238,13 +238,23 @@ figure img{
     animation: load 2s;
     z-index: 50;
 }
+
 .placeholder{
     position: relative;
     overflow: hidden;
 }
-*/
+
 figcaption{
     display: none;
+}
+
+figure{
+    justify-self: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 @keyframes load {
