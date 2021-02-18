@@ -99,9 +99,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    
+    figcaption{
+        display: block;
+    }
+    
     .shadow:hover {
-        box-shadow: 0 0 55px rgb(47, 45, 196);
+        box-shadow: 0 0 35px rgba(64, 66, 194, 0.829);
         z-index: 2500;
     }
 }

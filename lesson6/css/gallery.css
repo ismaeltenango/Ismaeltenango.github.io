@@ -219,7 +219,7 @@ figure img{
     max-width: 325px;
     border-radius: 7px 7px 0 0;
 }
-
+/*
 .shadow{
     background-color: lightgray;
     min-width: auto;
@@ -242,6 +242,11 @@ figure img{
     position: relative;
     overflow: hidden;
 }
+*/
+figcaption{
+    display: none;
+}
+
 @keyframes load {
     0% {
         left:-600px;
