@@ -10,19 +10,50 @@
 </head>
 <body class ='grid'>
       
-            <div class='placeholder-loading'><img class='image1' class='placeholder-loading' id='loading' src='..\lesson6\images\weather-1fixed1.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image2' class='placeholder-loading' id='loading' src='../week7/abolfazl-sorkhi-taekO9C1x5w-unsplash.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image3' class='placeholder-loading' id='loading' src='../week7/asoggetti-umnkKO0xgco-unsplash.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image4' class='placeholder-loading' id='loading' src='../week7/daniele-colucci-OtXJhYjbKeg-unsplash.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image5' class='placeholder-loading' id='loading' src='../week7/jessica-wong-kHgqvKOziSQ-unsplash.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image6' class='placeholder-loading' id='loading' src='../week7/maksym-sirman-lEuxYh1kftg-unsplash.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image7' class='placeholder-loading' id='loading' src='../week7/morgane-le-breton-fql4EB-kERY-unsplash.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image8' class='placeholder-loading' id='loading' src='../week7/nancy-reid-e8N7qnXVErs-unsplash.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image9' class='placeholder-loading' id='loading' src='../week7/patti-black-q_CK7PnrTtU-unsplash.jpg' alt='grisactivity'></div>
-            <div class='placeholder-loading'><img class='image10' class='placeholder-loading' id='loading' src='../week7/tomas-malik-wnbBH_CGOYQ-unsplash (1).jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image1'><img src='' class='loading' data-src='..\lesson6\images\weather-1fixed1.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image2'><img src='' class='loading' data-src='../week7/abolfazl-sorkhi-taekO9C1x5w-unsplash.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image3'><img src='' class='loading' data-src='../week7/asoggetti-umnkKO0xgco-unsplash.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image4'><img src='' class='loading' data-src='../week7/daniele-colucci-OtXJhYjbKeg-unsplash.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image5'><img src='' class='loading' data-src='../week7/jessica-wong-kHgqvKOziSQ-unsplash.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image6'><img src='' class='loading' data-src='../week7/maksym-sirman-lEuxYh1kftg-unsplash.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image7'><img src='' class='loading' data-src='../week7/morgane-le-breton-fql4EB-kERY-unsplash.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image8'><img src='' class='loading' data-src='../week7/nancy-reid-e8N7qnXVErs-unsplash.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image9'><img src='' class='loading' data-src='../week7/patti-black-q_CK7PnrTtU-unsplash.jpg' alt='grisactivity'></div>
+            <div class='placeholder-loading' id='image10'><img src=''  class='loading' data-src='../week7/tomas-malik-wnbBH_CGOYQ-unsplash (1).jpg' alt='grisactivity'></div>
    
 </body>
 <script>
+window.addEventListener('load', (event) => {
 
+const images = document.querySelectorAll("[data-src]");
+
+function preloadImage(img) {
+    console.log("trying to load" + img);
+    const src = img.getAttribute("data-src")
+    if (!src) {
+        return;
+    }
+    img.src = src;
+}
+const imgOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px 200px 0px"
+}
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+    console.log(entries);
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return
+        }
+        else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    })
+}, imgOptions);
+images.forEach(image => {
+    imgObserver.observe(image);
+});
+});
 </script>
 </html>
