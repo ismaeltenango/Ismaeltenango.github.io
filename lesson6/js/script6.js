@@ -39,6 +39,18 @@ if ( dName == 'Friday'){
     document.getElementById('pancake').style.display = "none";
 }
 
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+
+function selectResponse() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#selectbrowser');
+	s.style.display = "block";
+	s.textContent = sel.value;
+	
+}
+
 /*
 window.addEventListener('load', (event)=>{
     const lu = document.querySelector('#currentdate');

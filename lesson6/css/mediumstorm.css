@@ -1,0 +1,111 @@
+@media only screen and (min-width: 770px){
+
+    header {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    img.logo {
+       margin-left: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        grid-column: 2/3;
+        margin-right: 5em;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+
+    nav ul li{
+        margin-left: 2%;
+    }
+
+    .banner{
+        position: relative;
+        border-radius: 10px;
+        opacity: .95;
+    }
+
+    .summary{
+        position: absolute;
+        top: 235px;
+        left: 10%;
+        background: radial-gradient(rgba(252, 248, 248, 0.733), #2e30b38a);
+        border: solid rgba(255, 81, 0, 0.26);
+        box-shadow: 1px 1px 15px 2px rgba(231, 21, 21, 0.651);
+    }
+
+    .summary p{
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .forecastttle{
+        text-align: left;
+        border-radius: 10px 10px 0 0;
+        border-top: solid rgba(255, 81, 0, 0.404);
+        border-left: solid rgba(255, 81, 0, 0.404);
+    }
+
+    .forecast{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-radius: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .map{
+        width: 20%;
+        height: 80%;
+        border-radius: 15px;
+    } 
+
+    main {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1050px){
+
+    h1{
+        text-align: center;
+        margin-right: 6em;
+    }
+
+    nav ul{
+        margin-left: 14em;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+    
+    figcaption{
+        display: block;
+        font-family: 'Itim', sans-serif, monospace;
+        color: rgb(145, 0, 22);
+        padding: 10px;
+        opacity: .9;
+    }
+    
+    .shadow:hover {
+        box-shadow: 0 0 35px rgba(64, 66, 194, 0.829);
+        z-index: 2500;
+    }
+}
