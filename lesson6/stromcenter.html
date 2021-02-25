@@ -16,7 +16,7 @@
 <header>
     <img class='logo'
         src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-09-512.png"
-        alt="itscooloutside icon" height="100px">
+        alt="itscooloutside icon">
     <h1> Itscooloutside.com<br><p class='sub'>Get out lazy guy!</p></h1>
 </header>
 </div>
@@ -33,7 +33,7 @@
     </nav>
 
     <main>
-        <h1>Request Form</h1>
+        <h1 class="stormtitle" >itscooloutside.com<br>Storm Center</h1>
             <form method='get' action='https://ismaeltenango.github.io/lesson6/thanks.html'>
             <fieldset>
                 <legend>Request Form</legend>
@@ -43,21 +43,24 @@
                 <label class="top">Zip Code* <input type="number" name="zipcode" placeholder="56570" required></label>
                 <label class="top">Date <input type='date' name="completeDate"></label>
                 
-                <label class="sbs"><p>Storm Type</p>
-                <label class="sbs"><input type='radio'name='flash' value='flash'> Flash Flood</label>
-                <label class="sbs"><input type='radio'name='hail' value='hail'> Hail</label>
-                <label class="sbs"><input type='radio'name='thurderstorm' value='thurderstorm'> Thunderstorm</label>
-                <label class="sbs"><input type='radio'name='tornado' value='tornado'> Tornado</label>
-                <span><label class="top"><input type="text" name="tornado-type" placeholder="others..."></label></span>
+                <label class='top'><p>Storm Type</p>
+                    <input list="browsers" name="browser" id="browser" placeholder="storm type...">
+                        <datalist id="browsers">
+                            <option value="flash flood">
+                            <option value="hail">
+                            <option value="hurracane">
+                            <option value="thurderstorm">
+                            <option value="tornado">
+                        </datalist>
                 </label>
 
-                <label class="sbs" class="flexly" for="rating"><p>Rating:</p> &nbsp;&nbsp;&nbsp;
+                <label class="flexly" for="rating"><p>Rating:</p> &nbsp;&nbsp;&nbsp;
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span>
                 </label>
                 <label class='top'> <p>Storm Region</p>
                     <select name='subject'>
-                        <option value="" disabled>Select Region...</option>
+                        <option value="" disabled>Select Region...&#9660;</option>
                     <option value='preston'>Preston</option>
                     <option value='soda'>Soda springs</option>
                     <option value='fish'>Fish Heaven</option>
@@ -65,12 +68,12 @@
                 </label>
                 <label class="sbs">
                 <p>User In Danger level</p>
-                <label class="sbs"><input type='radio'name='audience' value='yes'> Yes</label>
-                <label class="sbs"><input type='radio'name='audience' value='maybe'> Maybe</label>
-                <label class="sbs"><input type='radio'name='audience' value='no'> No</label>
+                <label class="sbs"><input type='radio' name='audience' value='yes'> Yes</label>
+                <label class="sbs"><input type='radio' name='audience' value='maybe'> Maybe</label>
+                <label class="sbs"><input type='radio' name='audience' value='no'> No</label>
                 </label>
-                <label><p>Additional Information or Comments</p><textarea name="text" rows="5" cols="auto"></textarea></label><br>
-                <input type="submit" value="Send-Request" class="submitBtn" onclick="thanks()">
+                <label><p>Additional Information or Comments</p><textarea name="text" rows="5" cols="25"></textarea></label><br>
+                <input type="submit" value="Send Request" class="submitBtn" onclick="thanks()">
 
             </fieldset>
             </form>
@@ -79,25 +82,25 @@
         <div class='contact'>
             <p class='info' > &#9993; ten20007@byui.edu<br>&#x260E; 801-133-55-25<br>&#x1f4cc; Cuautla, Morelos, México</p>
 
-            <img class='map' src='../lesson6/images/map.JPG'alt='screenshot preston'>
+            <img class='map' src='../lesson6/images/map.JPG' alt='screenshot preston'>
         
         <div class='links'>
         <a href="https://www.instagram.com/98_ismael/" target="_blank">
-            <img class='instagram' src='../lesson6/images/instagram.png'alt='instagram logo' height="35px">
+            <img class='instagram' src='../lesson6/images/instagram.png' alt='instagram logo'>
         </a>
 
         <a href="https://github.com/ismaeltenango/Ismaeltenango.github.io" target="_blank">
-            <img class='github' src='../lesson6/images/guthub.png'alt='github logo' height="35px">
+            <img class='github' src='../lesson6/images/guthub.png' alt='github logo'>
             </a>
 
         <a href="https://www.facebook.com/ismaelmoises.tenangoanaya" target="_blank">
-            <img class='facebook' src='../lesson6/images/facebook.png'alt='facebook logo' height="35px">
+            <img class='facebook' src='../lesson6/images/facebook.png' alt='facebook logo'>
         </a>
 
         </div>
         
         </div>
-        &copy <span id='copyrightyear'></span> | Ismael Moises Tenango Anaya | Rexburg | <a href= 'https://www.byui.edu/online'>BYU-I Student</a><br>
+        &copy; <span id='copyrightyear'></span> | Ismael Moises Tenango Anaya | Rexburg | <a href= 'https://www.byui.edu/online'>BYU-I Student</a><br>
         <span id="currentdate"></span>
         
       </footer>
@@ -107,6 +110,5 @@
         WebFont.load({google: {families: ["Itim"]}});
         WebFont.load({google: {families: ['Bellota Text']}});
       </script>
-</body>
 </body>
 </html>
