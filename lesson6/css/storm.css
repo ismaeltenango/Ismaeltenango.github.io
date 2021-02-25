@@ -242,7 +242,6 @@ h1{
     background: -webkit-linear-gradient(top,  #2b2e58 100%,#5c6b83 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #c2c3d6 25%,#556c94 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#556c94', endColorstr='#813131',GradientType=0 ); /* IE6-9 */
-
     border-radius: 15px;
 }
 
