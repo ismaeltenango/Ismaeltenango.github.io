@@ -44,10 +44,10 @@
                 <label class="top">Date <input type='date' name="completeDate"></label>
                 
                 <label class="sbs"><p>Storm Type</p>
-                <label class="sbs"><input type='radio'name='audience' value='beginner'> Flash Flood</label>
-                <label class="sbs"><input type='radio'name='audience' value='intermediate'> Hail</label>
-                <label class="sbs"><input type='radio'name='audience' value='advance'> Thunderstorm</label>
-                <label class="sbs"><input type='radio'name='audience' value='advance'> Tornado</label>
+                <label class="sbs"><input type='radio'name='flash' value='flash'> Flash Flood</label>
+                <label class="sbs"><input type='radio'name='hail' value='hail'> Hail</label>
+                <label class="sbs"><input type='radio'name='thurderstorm' value='thurderstorm'> Thunderstorm</label>
+                <label class="sbs"><input type='radio'name='tornado' value='tornado'> Tornado</label>
                 <span><label class="top"><input type="text" name="tornado-type" placeholder="others..."></label></span>
                 </label>
 
@@ -57,7 +57,7 @@
                 </label>
                 <label class='top'> <p>Storm Region</p>
                     <select name='subject'>
-                        <option value="">Select Region...</option>
+                        <option value="" disabled>Select Region...</option>
                     <option value='preston'>Preston</option>
                     <option value='soda'>Soda springs</option>
                     <option value='fish'>Fish Heaven</option>
@@ -69,7 +69,7 @@
                 <label class="sbs"><input type='radio'name='audience' value='maybe'> Maybe</label>
                 <label class="sbs"><input type='radio'name='audience' value='no'> No</label>
                 </label>
-                <label><p>Additional Information or Comments</p><textarea name="text" rows="5" cols="40"></textarea></label>
+                <label><p>Additional Information or Comments</p><textarea name="text" rows="5" cols="auto"></textarea></label><br>
                 <input type="submit" value="Send-Request" class="submitBtn" onclick="thanks()">
 
             </fieldset>
