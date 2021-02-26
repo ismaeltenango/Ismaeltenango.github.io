@@ -28,6 +28,9 @@ let dMonth = monts[d.getMonth()];
 let fulldate = dName + ", " + d.getDate() + " " + dMonth + " " + d.getFullYear();
 document.getElementById("currentdate").textContent = fulldate;
 
+const cry = document.querySelector('#copyrightyear');
+cry.textContent = new Date().getFullYear();
+
 function toggleMenu() {
    document.getElementById('primariNav').classList.toggle('hide');
 }
