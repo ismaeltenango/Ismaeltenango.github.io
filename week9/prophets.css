@@ -44,3 +44,8 @@ img{
     filter: drop-shadow(0 0 0.75em rgb(70, 67, 67));
     margin-bottom: 10px;
 }
+
+footer{
+    text-align: center;
+    margin-top: 25px;
+}
