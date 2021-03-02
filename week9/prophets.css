@@ -8,9 +8,10 @@ section{
     background-color: rgba(143, 187, 223, 0.753);
     text-align: center;
     border: solid 1px rgb(94, 92, 92);
-    margin-bottom: 10px;
+    margin: 10px;
     border-radius: 5px;
 }
+
 h2 {
     color: rgb(18, 18, 133);
     font-family: serif;
@@ -39,7 +40,7 @@ main{
 }
 
 img{
-    box-shadow: darkcyan;
+    max-width: 300px;
     filter: drop-shadow(0 0 0.75em rgb(70, 67, 67));
     margin-bottom: 10px;
 }
@@ -47,4 +48,24 @@ img{
 footer{
     text-align: center;
     margin-top: 25px;
+}
+
+@media only screen and (min-width: 770px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 25px;
+        margin: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 1050px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 25px;
+        margin: 0;
+    }
+    
 }
