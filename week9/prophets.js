@@ -16,7 +16,7 @@ fetch (requestURL)
         let h2 = document.createElement('h2');
         let para = document.createElement('p');
         let birthplace = document.createElement('p');
-        let image = document.createElement('img')
+        let image = document.createElement('img');
 
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
         card.appendChild(h2);
@@ -25,7 +25,9 @@ fetch (requestURL)
         birthplace.textContent = 'Place of Birth:' +'  ' + prophets[i].birthplace;
         card.appendChild(birthplace)
 
-        image.setAttribute('src', prophets[i].imageurl);
+        image.setAttribute('src', prophets[i].imageurl, 'alt', prophets[i].name + '-' + prophets[i].order );
+        card.appendChild(image)
+        image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order );
         card.appendChild(image)
 
         document.querySelector('div.cards').appendChild(card);
