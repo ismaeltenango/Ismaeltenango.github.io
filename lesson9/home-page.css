@@ -15,12 +15,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     z-index: 20;
 }
 
-.logo{
-    height: 100px;
-}
-
 body{
-    background-image: url("../images/backgrounfsite.jpg");
+    background-image: url("../lesson9/images/backgrounfsite.jpg");
     background-color: #cccccc;
 }
 
@@ -42,6 +38,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#597fc1', end
     background-color: transparent;
     margin-bottom: 10px;
     font-size: medium;
+}
+
+h1 {
+
+    color: #1D2E53;
+    font-family: 'Itim', sans-serif, monospace;
 }
 
 nav {
@@ -125,142 +127,69 @@ nav {
 }
 
 main{
-    max-width: 550px;
+    margin: 20px;
+}
+
+.title{
+    text-align: center;
     margin: 0 auto;
 }
 
-form label.sbs{
-    display: block;
-    padding: .75rem 0;
-    font-size: large;
+img.banner{
+    width: 100%;
 }
 
-p{
-    font-weight: 900;
-    font-size: x-large;
-    margin-bottom: 0;
+p {
+    font-family: 'Itim', sans-serif, monospace;
 }
 
-form label.top{
-    display:  block;
-    padding-top: 1rem;
-    font-size: 1.1em;
-    font-size: large;
-}
-
-form fieldset{
-    margin: 2em;
-    border: 3px solid #8b2929;
-    border-radius: 15px;
-    padding: 19px 5%;
-    background-color: #559ec0e8;
-    font-family: 'Bellota Text', 'sans-serif', monospace;
-}
-
-form legend{
-    margin: 0 auto;
-    padding: 0 1.2em;
-    font-weight: 900;
-    font-size: x-large;
-    margin-bottom: -1em;
-}
-
-form label.top input, form label.top select{
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1.1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem;
-    color: rgb(34, 14, 14);
-    width: 80%;
-    max-width: 10em;
-    background-color: #ffffffc4;
-}
-
-
-form input.submitBtn{
-    border: 1px dashed #c2c3d6;
-    background-color: #cf6a26;
-    color: rgb(241, 241, 241);
-    font-size: x-large;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin-top: 0 0 2em 2%;
-    width: auto;
-    max-width: 15em;
-}
-
-form label.top input:required{
-    border-left: red solid 8px;
-}
-
-form label.top input:required:valid{
-    border-left: rgb(38, 131, 38) solid 8px;
-}
-
-form label span {
-    font-weight: 900;
-    font-size: x-large;
-}
-
-form label input.rating {
-    font-weight: 900;
-    font-size: x-large;
-}
-
-h1.stormtitle {
+h2, h3{
     color: #1D2E53;
     font-family: 'Itim', sans-serif, monospace;
-    background-color: #7a95c4d8;
-    border-radius: 10px;
+}
+
+
+section{
+    background: linear-gradient(0deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,1) 93%);
     padding: 1em;
-    margin: 0 auto;
-    border: 2px dashed rgb(250, 0, 0);
-    max-width: 550px;
+    border-radius: 10px;
 }
 
-h1{
+.cities{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+h2,h3,p{
     text-align: center;
 }
 
-.thankstitle1{
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 2em;
-    padding: 1.5em;
-    border: 2px dashed #fff;
-    color: #5a0404b6;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c2c3d6+0,597fc1+100 */
-    background: #c2c3d6; /* Old browsers */
-    background: -moz-linear-gradient(top,  #693a27 0%, #3d5783b7 10%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #c2c3d6 0%,#2a4b85b7 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #c2c3d6 0%,#536e9cc0 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c3d6', endColorstr='#597fc1',GradientType=0 ); /* IE6-9 */
-    border-radius: 15px;
-}
-.thankstitle{
-    text-align: center;
-    margin: 0 auto;
-    padding: 1.5em;
-    border: 2px dashed #fff;
-    color: #5a0404b6;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c2c3d6+0,597fc1+100 */
-    background: #c2c3d6; /* Old browsers */
-    background: -moz-linear-gradient(top,  #c2c3d6 100%, #813131 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #2b2e58 100%,#5c6b83 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #c2c3d6 25%,#556c94 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#556c94', endColorstr='#813131',GradientType=0 ); /* IE6-9 */
-    border-radius: 15px;
+main div.cities section h2{
+    font-size: xx-large;
+    text-shadow: 1px 1px #ffffffb6;
+    margin: 20px 2%;
+    letter-spacing: 3px;
 }
 
-form input{
-    cursor: pointer;
+main div.cities section h3{
+    border-bottom: 3px solid rgb(79, 54, 168);
+    border-top: 3px solid rgb(79, 54, 168);
+    letter-spacing: 3px;
 }
-form input:hover{
-     background-color: #9b5729;
-     color: rgb(177, 243, 92);
-     border: 1px solid #c2c3d6;
+
+main div.cities section p{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+main div.cities section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgrey;
+    height: 300px;
+    border-radius: 10px;
 }
 
 
@@ -308,12 +237,6 @@ footer{
     margin-bottom: 2em;
 }
 
-p.info{
-    font-weight: 400;
-    font-size: medium;
-    font-family: 'Itim', sans-serif, monospace;
-}
-
 .links{
     grid-column: 2/3;
     grid-row: 2/3;
@@ -323,15 +246,10 @@ p.info{
 
 .facebook{
     border-radius: 0 30px 30px 0; 
-    height: 35px;
 }
 
 .instagram{
     border-radius:30px 0 0 30px;
-    height: 35px;
-}
-.github{
-    height: 35px;
 }
 
 footer a{

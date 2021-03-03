@@ -21,14 +21,14 @@ fetch (requestURL)
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
         card.appendChild(h2);
         para.textContent = 'Date of Birth:' +'  ' + prophets[i].birthdate;
-        card.appendChild(para)
+        card.appendChild(para);
         birthplace.textContent = 'Place of Birth:' +'  ' + prophets[i].birthplace;
         card.appendChild(birthplace)
 
         image.setAttribute('src', prophets[i].imageurl, 'alt', prophets[i].name + '-' + prophets[i].order );
-        card.appendChild(image)
+        card.appendChild(image);
         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order );
-        card.appendChild(image)
+        card.appendChild(image);
 
         document.querySelector('div.cards').appendChild(card);
     }

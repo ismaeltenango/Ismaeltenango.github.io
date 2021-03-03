@@ -1,0 +1,178 @@
+@media only screen and (min-width: 770px){
+
+    header {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    img.logo {
+       margin-left: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        grid-column: 2/3;
+        margin-right: 5em;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+
+    nav ul li{
+        margin-left: 2%;
+    }
+
+    .banner{
+        position: relative;
+        border-radius: 10px;
+        opacity: .95;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section{
+        background: rgb(35,37,56);
+        background: linear-gradient(270deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,0.908000700280112) 93%);
+        padding: 1.5em;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        /* margin-bottom: 1em; */
+    }
+
+    section:nth-child(odd) {
+        background: rgb(35,37,56);
+        background: linear-gradient(90deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,0.908000700280112) 93%);
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    main div.cities section img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: darkgrey;
+        
+        height: 300px;
+    }
+
+    h2,h3,p{
+        text-align: center;
+    }
+
+    main div.cities section h2{
+        font-size: xx-large;
+        text-shadow: 1px 1px #ffffffb6;
+        letter-spacing: 3px;
+    }
+
+    main div.cities section h3{
+        border-bottom: 3px solid rgb(79, 54, 168);
+        border-top: 3px solid rgb(79, 54, 168);
+        letter-spacing: 3px;
+    }
+
+    main div.cities section p{
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    footer img.map{
+        width: 50%;
+        height: 80%;
+        border-radius: 15px;
+    }
+    
+}
+
+@media only screen and (min-width: 1050px){
+
+    h1{
+        text-align: center;
+        margin-right: 6em;
+    }
+
+    nav ul{
+        margin-left: 14em;
+    }
+
+    footer img.map{
+        width: 200px;
+        
+    }
+
+    section{
+        background: linear-gradient(0deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,1) 93%);
+        padding: 1.5em;
+        border-radius: 10px;
+        display:unset !important;
+        flex-direction:unset !important;
+        /* margin-bottom: 1em; */
+    }
+
+    section:nth-child(odd) {
+        background: linear-gradient(0deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,1) 93%);
+        display:unset !important;
+        flex-direction: unset !important;
+    }
+
+    section{
+        background: linear-gradient(0deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,1) 93%);
+        padding: 1em;
+        border-radius: 10px;
+    }
+
+    .cities{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5%;
+    }
+
+    h2,h3,p{
+        text-align: center;
+    }
+
+    main div.cities section h2{
+        font-size: xx-large;
+        text-shadow: 1px 1px #ffffffb6;
+        margin: 20px 2%;
+        letter-spacing: 3px;
+    }
+
+    main div.cities section h3{
+        border-bottom: 3px solid rgb(79, 54, 168);
+        border-top: 3px solid rgb(79, 54, 168);
+        letter-spacing: 3px;
+    }
+
+    main div.cities section p{
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    main div.cities section img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: darkgrey;
+        height: 300px;
+    }
+
+}
