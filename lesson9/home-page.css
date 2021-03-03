@@ -159,6 +159,7 @@ section{
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
+    margin: 0 auto;
 }
 
 h2,h3,p{
