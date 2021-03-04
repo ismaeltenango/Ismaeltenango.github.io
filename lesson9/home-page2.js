@@ -68,6 +68,9 @@ fetch(requestURL)
     // for (let i = 0; i < towns.length; i++ ) {
 
         let card = document.createElement('section');
+        let div_1 = document.createElement('div');
+        let div_photo1 = document.createElement('div');
+
         let card2 = document.createElement('section');
         let card3 = document.createElement('section');
 
@@ -79,17 +82,17 @@ fetch(requestURL)
         let fish_popu = document.createElement('p');
         let img_fish = document.createElement('img');
         fish.textContent = towns[1].name;
-        card.appendChild(fish);
+        div_1.appendChild(fish);
         fish_motto.textContent = towns[1].motto;
-        card.appendChild(fish_motto);
+        div_1.appendChild(fish_motto);
         fish_rain.textContent = 'Average Rain Fall: ' + towns[1].averageRainfall;
-        card.appendChild(fish_rain);
+        div_1.appendChild(fish_rain);
         fish_popu.textContent = 'Current Population: ' + towns[1].currentPopulation;
-        card.appendChild(fish_popu);
+        div_1.appendChild(fish_popu);
         img_fish.setAttribute('src', towns[1].photo, 'alt', towns[1].name + ' photo');
-        card.appendChild(img_fish);
+        div_photo1.appendChild(img_fish);
         img_fish.setAttribute('alt', towns[1].name + ' photo');
-        card.appendChild(img_fish);
+        div_photo1.appendChild(img_fish);
 
 
 
@@ -137,6 +140,9 @@ fetch(requestURL)
 
 
         document.querySelector('div.cities').appendChild(card);
+        document.querySelector('section').appendChild(div_1);
+        document.querySelector('section').appendChild(div_photo1);
+
         document.querySelector('div.cities').appendChild(card2);
         document.querySelector('div.cities').appendChild(card3);
 })
