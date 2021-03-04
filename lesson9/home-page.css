@@ -129,16 +129,6 @@ nav {
 main{
     margin: 20px;
 }
-
-.title{
-    text-align: center;
-    margin: 0 auto;
-}
-
-img.banner{
-    width: 100%;
-}
-
 p {
     font-family: 'Itim', sans-serif, monospace;
 }
@@ -153,13 +143,13 @@ section{
     background: linear-gradient(0deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,1) 93%);
     padding: 1em;
     border-radius: 10px;
+    margin-bottom: 25px;
 }
 
 .cities{
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    margin: 0 auto;
 }
 
 h2,h3,p{
@@ -192,6 +182,82 @@ main div.cities section img{
     height: 300px;
     border-radius: 10px;
 }
+
+
+
+
+.cities2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+main div.cities2 section h2{
+    font-size: xx-large;
+    text-shadow: 1px 1px #ffffffb6;
+    margin: 20px 2%;
+    letter-spacing: 3px;
+}
+
+main div.cities2 section h3{
+    border-bottom: 3px solid rgb(79, 54, 168);
+    border-top: 3px solid rgb(79, 54, 168);
+    letter-spacing: 3px;
+}
+
+main div.cities2 section p{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+main div.cities2 section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgrey;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+
+
+
+.cities3{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+main div.cities3 section h2{
+    font-size: xx-large;
+    text-shadow: 1px 1px #ffffffb6;
+    margin: 20px 2%;
+    letter-spacing: 3px;
+}
+
+main div.cities3 section h3{
+    border-bottom: 3px solid rgb(79, 54, 168);
+    border-top: 3px solid rgb(79, 54, 168);
+    letter-spacing: 3px;
+}
+
+main div.cities3 section p{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+main div.cities3 section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgrey;
+    height: 300px;
+    border-radius: 10px;
+}
+
 
 
 

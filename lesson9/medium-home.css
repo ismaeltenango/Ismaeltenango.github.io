@@ -42,11 +42,45 @@
         opacity: .95;
     }
 
-    main{
-        display: flex;
-        flex-wrap: wrap;
+
+    .cities {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 0 auto;
     }
-    
+    .cities2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 0 auto;
+    }
+    .cities3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 0 auto;
+    }
+
+
+
+    main div.cities section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+    }
+    main div.cities2 section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        width: 100%;
+    }
+    main div.cities3 section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+    }
+
     section{
         background: rgb(35,37,56);
         background: linear-gradient(270deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,0.908000700280112) 93%);
@@ -54,10 +88,9 @@
         border-radius: 10px;
         display: flex;
         flex-direction: row;
-        /* margin-bottom: 1em; */
     }
 
-    section:nth-child(odd) {
+    main .cities2:nth-child(odd) {
         background: rgb(35,37,56);
         background: linear-gradient(90deg, rgba(35,37,56,0.5634628851540616) 2%, rgba(121,121,184,0.908000700280112) 93%);
         display: flex;
@@ -140,11 +173,12 @@
         border-radius: 10px;
     }
 
-    .cities{
+    main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 5%;
+        gap: 2%;
         margin: 0 auto;
+        max-width: 1000px;
     }
 
     h2,h3,p{
