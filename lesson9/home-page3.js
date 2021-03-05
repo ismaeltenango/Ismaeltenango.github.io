@@ -92,7 +92,7 @@ fetch(requestURL)
         div_1.appendChild(fish_rain);
         fish_popu.textContent = 'Current Population: ' + towns[1].currentPopulation;
         div_1.appendChild(fish_popu);
-        img_fish.setAttribute('src','../lesson9/images/photo1.2.jpg', 'alt', towns[1].name + ' photo');
+        img_fish.setAttribute('src','../lesson9/images/photo12.jpg', 'alt', towns[1].name + ' photo');
         div_photo1.appendChild(img_fish);
         img_fish.setAttribute('alt', towns[1].name + ' photo');
         div_photo1.appendChild(img_fish);
@@ -112,7 +112,7 @@ fetch(requestURL)
         div_2.appendChild(preston_rain);
         preston_popu.textContent = 'Current Population: ' + towns[5].currentPopulation;
         div_2.appendChild(preston_popu);
-        img_preston.setAttribute('src', '../lesson9/images/photo1.1.jpg', 'alt', towns[5].name + ' photo');
+        img_preston.setAttribute('src', '../lesson9/images/photo11.jpg', 'alt', towns[5].name + ' photo');
         div_photo2.appendChild(img_preston);
         img_preston.setAttribute('alt', towns[5].name + ' photo');
         div_photo2.appendChild(img_preston);
@@ -134,7 +134,7 @@ fetch(requestURL)
         div_3.appendChild(soda_rain);
         soda_popu.textContent = 'Current Population: ' + towns[6].currentPopulation;
         div_3.appendChild(soda_popu);
-        img_soda.setAttribute('src', '../lesson9/images/photo1.3.jpg', towns[6].name + ' photo');
+        img_soda.setAttribute('src', '../lesson9/images/photo13.jpg', towns[6].name + ' photo');
         div_photo3.appendChild(img_soda);
         img_soda.setAttribute('alt', towns[6].name + ' photo');
         div_photo3.appendChild(img_soda);
