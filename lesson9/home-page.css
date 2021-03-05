@@ -190,7 +190,6 @@ main div.cities section img{
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    margin: 0 auto;
 }
 
 main div.cities2 section h2{
