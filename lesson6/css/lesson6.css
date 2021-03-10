@@ -143,9 +143,17 @@ p {
     font-family: 'Itim', sans-serif, monospace;
 }
 
-h2{
+h2, h3{
     color: #1D2E53;
     font-family: 'Itim', sans-serif, monospace;
+}
+
+.day_1, .day_2, .day_3,.day_4{
+    border-bottom: 1px dashed rgba(39, 7, 168, 0.76);
+}
+
+h3{
+    margin: 0;
 }
 
 .summary{
