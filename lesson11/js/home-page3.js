@@ -124,8 +124,6 @@ fetch(requestURL)
         let soda_rain = document.createElement('p');
         let soda_popu = document.createElement('p');
         let img_soda = document.createElement('img');
-
-
         soda.textContent = towns[6].name;
         div_3.appendChild(soda);
         soda_motto.textContent = towns[6].motto;
@@ -139,33 +137,9 @@ fetch(requestURL)
         img_soda.setAttribute('alt', towns[6].name + ' photo');
         div_photo3.appendChild(img_soda);
         
-        
-
-
         document.querySelector('div.cities').appendChild(card);
         document.querySelector('section').appendChild(div_1);
         document.querySelector('section').appendChild(div_photo1);
-
-        
-        // function alternate(size, size2){
-            
-        //     if(size.matches || size2.matches){
-        //         document.querySelector('div.cities2').appendChild(card2);
-        //         document.querySelector('div.cities2 section').appendChild(div_photo2);
-        //         document.querySelector('div.cities2 section').appendChild(div_2);
-        //     }
-        //     else{
-        //         document.querySelector('div.cities2').appendChild(card2);
-        //         document.querySelector('div.cities2 section').appendChild(div_2);
-        //         document.querySelector('div.cities2 section').appendChild(div_photo2);
-        //     }
-        // }
-        // let size = window.matchMedia('(min-width: 772px)')
-        // let size2 = window.matchMedia('(max-width: 1049px)')
-        // alternate(size, size2)
-        // size.addEventListener(size,size2)
-        // size2.addEventListener(size,size2)
-
 
         document.querySelector('div.cities2').appendChild(card2);
         document.querySelector('div.cities2 section').appendChild(div_2);
@@ -175,4 +149,3 @@ fetch(requestURL)
         document.querySelector('div.cities3 section').appendChild(div_3);
         document.querySelector('div.cities3 section').appendChild(div_photo3);
 })
-

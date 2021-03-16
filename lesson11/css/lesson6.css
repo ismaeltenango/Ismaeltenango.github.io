@@ -136,6 +136,21 @@ main{
     font-size: xx-large;
 }
 
+div#events{
+    text-align: center;
+    margin: 0 auto;
+    border: 2px dashed #1c1c36f1;
+    border-radius: 10px;
+    max-width: 350px;
+    margin-bottom: 10px;
+    background-color: rgba(230, 185, 164, 0.6);
+}
+
+div#events:hover {
+    box-shadow: 0 0 35px rgba(121, 95, 85, 0.829);
+    z-index: 2500;
+}
+
 img.banner{
     width: 100%;
     border-radius: 10px;
