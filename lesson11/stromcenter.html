@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Storm Center</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../Style/normalize.css">
+    <link rel="stylesheet" href="../lesson11/css/storm.css"> 
+    <link rel="stylesheet" href="../lesson11/css/mediumstorm.css"> 
+    <script src="../lesson11/js/gallerylazyloader.js"></script>
+</head>
+<body>
+    <p id='pancake'>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+<div class='heroheader'>
+<header>
+    <img class='logo'
+        src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-09-512.png"
+        alt="itscooloutside icon">
+    <h1> Itscooloutside.com<br><p class='sub'>Get out lazy guy!</p></h1>
+</header>
+</div>
+    <nav class='clearfix'>
+        <button onclick='toggleMenu()'>&#9776;</button>
+        <ul id='primariNav' class='hide'>
+            <li><a href="https://ismaeltenango.github.io/lesson9/home-page.html">home</a></li>
+            <li><a href="https://ismaeltenango.github.io/lesson6/lesson6.html">preston</a></li>
+            <li><a href="#">soda springs</a></li>
+            <li><a href="#">fish heaven</a></li> 
+            <li class='active'><a href="https://ismaeltenango.github.io/lesson6/stromcenter.html">storm center</a></li>
+            <li><a href="https://ismaeltenango.github.io/lesson6/gallery-7.html">gallery</a></li>     
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="stormtitle" >itscooloutside.com<br>Storm Center</h1>
+            <form method='get' action='https://ismaeltenango.github.io/lesson6/thanks.html'>
+            <fieldset>
+                <legend>Request Form</legend>
+                <label class="top">Full Name* <input type="text" name="firstname" minlength="5" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="example@example.com"></label>
+                <label class="top">Phone Number* <input type="tel" name="phone" placeholder="123 123 1234" required></label>
+                <label class="top">Zip Code* <input type="number" name="zipcode" placeholder="56570" required></label>
+                <label class="top">Date <input type='date' name="completeDate"></label>
+                
+                <label class='top'><p>Storm Type</p>
+                    <input list="browsers" name="browser" id="browser" placeholder="storm type...">
+                        <datalist id="browsers">
+                            <option value="flash flood">
+                            <option value="hail">
+                            <option value="hurracane">
+                            <option value="thurderstorm">
+                            <option value="tornado">
+                        </datalist>
+                </label>
+
+                <label class="flexly" for="rating"><p>Rating:</p> &nbsp;&nbsp;&nbsp;
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+                <label class='top'> <p>Storm Region</p>
+                    <select name='subject'>
+                        <option value="" disabled>Select Region...&#9660;</option>
+                    <option value='preston'>Preston</option>
+                    <option value='soda'>Soda springs</option>
+                    <option value='fish'>Fish Heaven</option>
+                    </select>
+                </label>
+                <label class="sbs">
+                <p>User In Danger level</p>
+                <label class="sbs"><input type='radio' name='audience' value='yes'> Yes</label>
+                <label class="sbs"><input type='radio' name='audience' value='maybe'> Maybe</label>
+                <label class="sbs"><input type='radio' name='audience' value='no'> No</label>
+                </label>
+                <label><p>Additional Information or Comments</p><textarea name="text" rows="5" cols="25"></textarea></label><br>
+                <input type="submit" value="Send Request" class="submitBtn" onclick="thanks()">
+
+            </fieldset>
+            </form>
+        </main>
+    <footer>
+        <div class='contact'>
+            <p class='info' > &#9993; ten20007@byui.edu<br>&#x260E; 801-133-55-25<br>&#x1f4cc; Cuautla, Morelos, México</p>
+
+            <img class='map' src='../lesson11/images/map.JPG' alt='screenshot preston'>
+        
+        <div class='links'>
+        <a href="https://www.instagram.com/98_ismael/" target="_blank">
+            <img class='instagram' src='../lesson11/images/instagram.png' alt='instagram logo'>
+        </a>
+
+        <a href="https://github.com/ismaeltenango/Ismaeltenango.github.io" target="_blank">
+            <img class='github' src='../lesson11/images/guthub.png' alt='github logo'>
+            </a>
+
+        <a href="https://www.facebook.com/ismaelmoises.tenangoanaya" target="_blank">
+            <img class='facebook' src='../lesson11/images/facebook.png' alt='facebook logo'>
+        </a>
+
+        </div>
+        
+        </div>
+        &copy; <span id='copyrightyear'></span> | Ismael Moises Tenango Anaya | Rexburg | <a href= 'https://www.byui.edu/online'>BYU-I Student</a><br>
+        <span id="currentdate"></span>
+        
+      </footer>
+      <script src="../lesson11/js/script6.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+        WebFont.load({google: {families: ["Itim"]}});
+        WebFont.load({google: {families: ['Bellota Text']}});
+      </script>
+</body>
+</html>
