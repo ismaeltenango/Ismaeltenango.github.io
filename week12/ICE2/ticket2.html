@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href="../ICE2/ticket2.css">
     <link rel='stylesheet' href="../ICE2/ticket-medium.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Ticket 2</title>
 </head>
 <body>
-    <section>
+    <section class='summary'>
             <img src='../ICE2/progress-bar.jpg' alt='progress bar'>
         <div class="box-content">
             <h1>Order Summary</h1>
@@ -18,9 +20,36 @@
                 <li>SHIPPING $ HANDLING <span>$ 6.00</span></li>
                 <li>SALES TAX <span>$8.05</span></li>
             </ul>
-            <p class='payment'>PAYMENT DUE <span class='final-price'>$ 61.00</span></p>
+            <p class='total'>PAYMENT DUE <span class='final-price'>$ 61.00</span></p>
             <p class="return">Return to cart</p>
         </div>
+    </section>
+    <section class='payment'>
+
+    <div class="box-content">
+
+        <div class='company'><button class='visa'>VISA</button><button class='paypal'>Paypal</button></div>
+
+        <h1>Payment Details</h1>
+        <div class="inputs">
+            <label class="name">Card Holder*<input id='enter' type="text" name="completename" minlength="5" placeholder="Jonh Doe"></label>
+        </div>
+        <div class="inputs">
+            <label class="name">Card Number*</label><input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="nope" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+        </div>
+        <div class="inputs2">
+            <label class="name">Month* <input id='enter2' type="number" name="zipcode" placeholder="01" ></label>
+            <label class="name">Year* <input id='enter2' type="number" name="zipcode" placeholder="01"></label>
+            <label class="name">CVV*<span class="material-icons">help</span><input id='enter2' type="number" name="zipcode" placeholder="*  *  *"></label>
+        </div>
+        <div class="inputs">
+        <label class="name">Billing Address <input id='enter' type="text" name="firstname" minlength="5"></label>
+        </div>
+        <label class='check'><input type='checkbox' name='audience' value='yes'> Same as shipping address</label>
+
+        <p class="security"><span class="material-icons">help</span>This is a secure transaction</p>
+        <div class="fix"><span class="next">Next</span><span class='cancel'>Cancel</span></div>
+    </div>
     </section>
 </body>
 </html>

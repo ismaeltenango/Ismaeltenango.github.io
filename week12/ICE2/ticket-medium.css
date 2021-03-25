@@ -1,14 +1,15 @@
 
-@media only screen and (min-width: 530px) {
-    section{
-        background-color: white;
+@media only screen and (min-width: 530px) { 
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-
-} /* end of media query */
-
-
-
-
-@media only screen and (min-width: 1028px) {
-    
-} end of media query
+    .payment{
+        margin-top: 5em;
+        margin: 0;
+    }
+    .summary{
+        margin: 0;
+        justify-self: right;
+    }
+} 
