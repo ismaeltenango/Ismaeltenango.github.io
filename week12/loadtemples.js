@@ -1,6 +1,6 @@
 window.addEventListener('load', ()=>{
 
-    const requestURL = '../week11/temples2.json'
+    const requestURL = '../week12/temples2.json'
     fetch (requestURL)
         .then((response)=>{
             return response.json();

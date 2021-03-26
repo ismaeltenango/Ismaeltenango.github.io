@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.active{
+    background-color: rgba(210, 105, 30, 0.795);
+    border-radius: 15px;
+}
+
 body{
     font-family: 'Averia Serif Libre', cursive, monospace;
 }
