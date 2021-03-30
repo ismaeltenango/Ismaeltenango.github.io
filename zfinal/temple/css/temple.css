@@ -107,6 +107,7 @@ nav{
     cursor: grab;
     font-size: large;
     padding:15px;
+    width: auto;
 }
 
 nav ul li a{
@@ -149,7 +150,7 @@ nav ul li a:hover{
         text-align: center;
         grid-template-columns: 1fr;
         align-items: center;
-        width: 35%;
+        width: 30%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
         border-radius: 0 0 0 30px;

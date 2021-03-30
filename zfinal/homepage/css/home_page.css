@@ -11,27 +11,27 @@
 
 body{
     font-family: 'Averia Serif Libre', cursive, monospace;
-}
+    background: rgb(59,61,108);
+    background: linear-gradient(180deg, rgba(59,61,108,0.12368697478991597) 25%, rgba(97,91,177,0.8687850140056023) 95%);}
 .nav-bar{
     position: fixed;
     width:100% ;
-
-}
-
-.not{
-    height: 900px;
-    background-color: chocolate;
+    max-height: 8em;
 }
 
 h1{
    position: absolute;
-   top: -20%;
    top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
    font-size: 3em;
    letter-spacing: 10px;
    text-align: center;
+   /* text-shadow: 4px 4px 5px rgb(253, 253, 253); */
+   background: rgb(35,36,56);
+   background: linear-gradient(270deg, rgba(35,36,56,0.49343487394957986) 2%, rgba(184,154,121,0.7567401960784313) 93%);
+    border-radius: 15px;
+    padding: 10px 2%; 
 }
 
 
@@ -39,8 +39,8 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    background-color: rgba(73, 59, 49, 0.459);
+    min-height: 2vh;
+    background-color: rgba(128, 112, 112, 0.911);
     z-index: 2500;
     font-family: 'Averia Serif Libre', cursive, monospace;
 
@@ -49,13 +49,13 @@ nav{
     /* text-transform: uppercase; */
     /* letter-spacing: 4px; */
     /* font-size: 25px; */
-    width: 150px;
-    position: relative;
+    width: 75px;
+    position: relative;   margin: 2px 2%;
 }
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 50%; 
+    width: 35%; 
 }
 .nav-links li{
     list-style: none;
@@ -67,8 +67,9 @@ nav{
     color: rgb(0, 0, 0);
     font-weight: bold;
     cursor: grab;
-    font-size: x-large;
+    font-size: large;
     padding:15px;
+    width: auto;
 }
 
 nav ul li a{
@@ -95,7 +96,7 @@ nav ul li a:hover{
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:878px){
     body{
         overflow-x: hidden;
     }
@@ -106,27 +107,41 @@ nav ul li a:hover{
         top: 0vh;
         background-color: rgba(224, 217, 217, 0.651);
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
         align-items: center;
-        width: 35%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
+        border-radius: 0 0 0 30px;
+
     }
     .nav-links li {
         opacity: 0;
     }
     nav ul li a{
         display: block;
+
+        
     }
     .burger{
         display: block;
         cursor: grab;
     }
     .nav-links a{
-        font-size: x-large;
+        font-size: large;
     }
     h1{
-        display: none;
+        top: 20%;
+        font-size: x-large;
+    }
+    
+     .logo img{
+        width: 50px;
+    }
+    main{
+        grid-template-columns: 1fr;
     }
 }
 
@@ -155,4 +170,83 @@ nav ul li a:hover{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+main{
+    margin-top: 3em;
+    position: relative;
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   text-align: center;
+   gap: 4em;
+   max-width: 1150px;
+   margin: 0 auto;
+}
+
+main h2{
+   text-align: center;
+   text-shadow: 4px 4px 5px rgb(253, 253, 253);
+   background: rgb(91,177,177);
+   background: radial-gradient(circle, rgba(91,177,177,0.5494572829131652) 23%, rgba(57,59,53,0.5718662464985995) 93%);    
+    border-radius: 15px;
+    padding: 10px 3%;
+    width: 100%;
+    margin-bottom: 1.2em;
+}
+
+main img{
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 2px 4px 20px 0px;
+}
+
+main section{
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+main section a.reserv{
+    cursor: grab;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(72, 11, 141);
+    border-radius: 15px;
+    border: 1px dashed black;
+    color: #eee;
+}
+
+footer{
+    position: relative;
+}
+main p{
+    padding: 15px;
+}
+.info{
+    border-width: 3px;
+    border-style: dashed;
+    border-image: 
+      linear-gradient(
+        to top, 
+        rgb(34, 15, 117), 
+        rgba(59, 61, 108, 0.014)
+      ) 1 100%;
+    border-radius: 15px;
+    padding: 10px;
+}
+li{
+    text-align: inherit;
+}
+strong{
+    text-align: center;
+    padding: 20px;
+    font-weight: 900;
+    background-color: rgb(177, 157, 92);
+    border-radius: 15px;
+    margin: 0 auto;
+    position: sticky;
+    top: 15%;
+    left: 0%; 
+    position: sticky;
+    writing-mode: vertical-rl;
 }
