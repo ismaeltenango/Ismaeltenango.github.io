@@ -12,7 +12,7 @@
 body{
     font-family: 'Averia Serif Libre', cursive, monospace;
     background: rgb(59,61,108);
-    background: linear-gradient(180deg, rgba(59,61,108,0.12368697478991597) 25%, rgba(97,91,177,0.8687850140056023) 95%);}
+    background: linear-gradient(180deg, rgba(59,61,108,0.12368697478991597) 25%, rgba(97,91,177,0.8687850140056023) 95%);
 }
 .nav-bar{
     position: fixed;
