@@ -214,3 +214,57 @@ nav ul li a:hover{
     color: rgba(255, 255, 255, 0.699);
     border-radius: 15px;
 }
+/*codepen*/
+
+.table {
+    padding: 30px;
+    margin: 0 auto;
+	width:100%;
+    margin-top: 1.5em;
+}
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:rgb(81, 88, 45);
+    font-size: xx-large;
+    font-weight: 900;
+    border-radius: 15px 15px 0 0;
+    color: rgb(255, 222, 169);
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+    font-size: x-large;
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+    padding: 25px;
+}
+.table .table-row:nth-child(even){
+    background: rgba(150, 214, 0, 0.313);
+}
+
+h2.formtitle {
+    color: #122449;
+    font-family: 'Averia Serif Libre', cursive, monospace;
+    background-color: rgba(164, 170, 77, 0.911);
+    border-radius: 15px;
+    padding: 1em;
+    margin: 0 auto;
+    border: 2px dashed rgb(250, 0, 0);
+    text-align: center;
+    font-size: xx-large;
+    max-width: 1250px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/*
+<span class="material-icons">done</span> 
+
+<span class="material-icons">close</span>
+ */
