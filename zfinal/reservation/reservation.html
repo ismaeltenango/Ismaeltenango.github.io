@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel='stylesheet' href='../reservation/css/reservation_queries.css'>
     <link rel='stylesheet' href='../reservation/css/reservation.css'>
+    <link rel='stylesheet' href='../reservation/css/reservation_queries.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
     <title>Templeview</title>
@@ -20,20 +20,24 @@
         </div>
         <ul class='nav-links'>
             <li>
-                <a href="#">home</a>
+                <a href="https://ismaeltenango.github.io/zfinal/homepage/home_page.html">home</a>
             </li>
             <li>
-                <a class='active' href="#">reservation</a>
+                <a href="https://ismaeltenango.github.io/zfinal/temple/temple.html">temples</a>
             </li>
             <li>
-                <a href="#">services</a>
+                <a class='active' href="https://ismaeltenango.github.io/zfinal/reservation/reservation.html">reservation</a>
             </li>
             <li>
-                <a href="#">reception</a>
+                <div class="right-menu">
+                    <a href="#"><button class='menu-button'>services</button></a>
+                    <div class="dropdown-menu">
+                        <a href="#">missionaries</a>
+                        <a href="#">reception</a>
+                    </div>
+                </div>
             </li>
-            <li>
-                <a href="#">missionaries</a>
-            </li>
+
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -43,10 +47,57 @@
     </nav>
     <img src="../reservation/media/ezgif.com-gif-maker.gif" alt="LDS temples gif" width="100%">
     <script src='../reservation/js/reservation.js'></script>
-    <p class="not">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Dignissimos suscipit maiores molestias itaque blanditiis
-         dolorem voluptates possimus. Iusto cumque, voluptatibus 
-         enim fugiat nesciunt ducimus, sequi perferendis officia 
-         facilis dolor dicta?</p>
+        <main>
+            <h2 class="formtitle" >Reservation form</h2>
+            <form method='get' action='https://ismaeltenango.github.io/zfinal/homepage/home-page.html'>
+            <fieldset>
+                <legend>General Information</legend>
+                <label class="top">Full Name* <input type="text" name="firstname" minlength="5" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="example@example.com" required></label>
+                <label class="top">Phone Number* <input type="tel" name="phone" placeholder="(123) 123 1234"required></label>
+                <label class='top'>Temple View* 
+                    <input list="browsers" name="browser" id="browser" placeholder="Hotel..." required>
+                        <datalist id="browsers">
+                            <option value="Idaho Falls Temple">
+                            <option value="Rexburg Idaho Temple">
+                            <option value="Kansas City Missouri Temple">
+                            <option value="Oklahoma City Oklahoma Temple">
+                        </datalist>
+                </label>
+
+            </fieldset>
+
+
+                <fieldset>
+                    <legend>Room Information</legend>
+                    <label class="top">Number of guests* <input type="number" name="guests" placeholder="0" required></label>
+                        <label class='top'>Room Type
+                            <select name='subject'>
+                                <option value="" disabled>Select type...&#9660;</option>
+                            <option value='Economic'>Economic</option>
+                            <option value='Basic'>Soda Basic</option>
+                            <option value='Deluxe'>Deluxe</option>
+                            </select>
+                        </label>
+                        <label class="top">Start Date* <input type='date' name="completeDate" required></label>
+                        <label class="top">End Date* <input type='date' name="completeDate" required></label>
+                
+                </fieldset>
+
+                <fieldset>
+                    <legend>Final comments</legend>
+                <label class="sbs">
+                Some Special Needs?
+                <label class="sbs"><input type='radio' name='audience' value='yes'> Yes</label>
+                <label class="sbs"><input type='radio' name='audience' value='no'> No</label>
+                </label>
+                
+                <label class="top">Additional Information or Comments<br><textarea name="text" rows="5" cols="23"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send Request" class="submitBtn" onclick="thanks()">
+
+            </fieldset>
+            </form>
+        </main>
 </body>
 </html>

@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel='stylesheet' href='../missionaries/css/missionaries_queries.css'>
     <link rel='stylesheet' href='../missionaries/css/missionaries.css'>
+    <link rel='stylesheet' href='../missionaries/css/missionaries_queries.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
-    <title>Templeview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <title>Templeview - Missionaries</title>
 </head>
 
 <body>
@@ -20,19 +22,22 @@
         </div>
         <ul class='nav-links'>
             <li>
-                <a href="#">home</a>
+                <a href="https://ismaeltenango.github.io/zfinal/homepage/home_page.html">home</a>
             </li>
             <li>
-                <a href="#">reservation</a>
+                <a href="https://ismaeltenango.github.io/zfinal/temple/temple.html">temples</a>
             </li>
             <li>
-                <a href="#">services</a>
+                <a href="https://ismaeltenango.github.io/zfinal/reservation/reservation.html">reservation</a>
             </li>
             <li>
-                <a href="#">reception</a>
-            </li>
-            <li>
-                <a class='active' href="#">missionaries</a>
+                <div class="right-menu">
+                    <a href="#"><button class='menu-button'>services</button></a>
+                    <div class="dropdown-menu">
+                        <a href="#">missionaries</a>
+                        <a href="#">reception</a>
+                    </div>
+                </div>
             </li>
         </ul>
         <div class="burger">
@@ -42,11 +47,39 @@
         </div>
     </nav>
     <img src="../missionaries/media/ezgif.com-gif-maker.gif" alt="LDS temples gif" width="100%">
-    <script src='../missionaries/js/home_page.js'></script>
-    <p class="not">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Dignissimos suscipit maiores molestias itaque blanditiis
-         dolorem voluptates possimus. Iusto cumque, voluptatibus 
-         enim fugiat nesciunt ducimus, sequi perferendis officia 
-         facilis dolor dicta?</p>
+    <script src='../missionaries/js/missionaries.js'></script>
+    <div class="container">
+        <section class="amenities">
+            <h2>Economic</h2>
+            <p>If you are not going to stay more than two weks, we recomned you the basic room.
+                Includes all you need and all the <a href="https://ismaeltenango.github.io/zfinal/services/services.html">amenities</a>
+                and a confortable room.
+            </p>
+            <img src="../missionaries/media/economic.jpg" alt="economic room">
+        </section>
+        <section class="amenities">
+            <h2>Basic</h2>
+            <p>Take advantage of the comodities we can offer you in this package.
+                Includes all you need and all the <a href="https://ismaeltenango.github.io/zfinal/services/services.html">amenities</a>,
+                a confortable room and a plenty space to relax in your room.
+            </p>
+            <img src="../missionaries/media/basic.jpg" alt="basic room">
+        </section>
+        <section class="amenities">
+            <h2>Deluxe</h2>
+            <p>
+               You will be feel like a king and a queen in this glamorous room.
+                Includes all you need and all the <a href="https://ismaeltenango.github.io/zfinal/services/services.html">amenities</a>
+                this is our best room and the best package offered in all zone around.
+            </p>
+            <img src="../missionaries/media/deluxe.jpg" alt="deluxe room">
+        </section>
+        <section class="info1">
+            <h3>Contact information</h3>
+                <p><span class="material-icons">call</span>Phone Number: (801)-123-4321</p>
+                <p><span class="material-icons">mail</span>E-mail: contact@contact.com</p>
+                <p><span class="material-icons">place</span>Address: 123 South 500 Main Street</p>
+        </section>
+    </div>
 </body>
 </html>

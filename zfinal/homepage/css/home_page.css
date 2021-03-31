@@ -12,7 +12,8 @@
 body{
     font-family: 'Averia Serif Libre', cursive, monospace;
     background: rgb(59,61,108);
-    background: linear-gradient(180deg, rgba(59,61,108,0.12368697478991597) 25%, rgba(97,91,177,0.8687850140056023) 95%);}
+    background: linear-gradient(180deg, rgba(59,61,108,0.12368697478991597) 25%, rgba(97,91,177,0.8687850140056023) 95%);
+}
 .nav-bar{
     position: fixed;
     width:100% ;
@@ -103,7 +104,7 @@ nav ul li a:hover{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 98vh;
+        height: 60vh;
         top: 0vh;
         background-color: rgba(224, 217, 217, 0.651);
         display: flex;
@@ -123,8 +124,6 @@ nav ul li a:hover{
     }
     nav ul li a{
         display: block;
-
-        
     }
     .burger{
         display: block;
@@ -250,4 +249,49 @@ strong{
     left: 0%; 
     position: sticky;
     writing-mode: vertical-rl;
+}
+
+.sub-pages{
+    border: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: grab;
+    font-size: large;
+    padding:15px;
+    width: auto;
+}
+
+.right-menu{
+    position: relative;
+    display: inline-block;
+}
+.right-menu:hover .dropdown-menu{
+    display: block;
+    background-color: rgba(128, 112, 112, 0.911);
+    border-radius: 15px;
+}
+.menu-button{
+    background-color: transparent;
+    font-family: 'Averia Serif Libre', cursive, monospace;
+    border: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: grab;
+    font-size: larger;
+    width: auto;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    z-index: 500;
+}
+.dropdown-menu a:hover{
+    transition: all 1s;
+    background-color: rgba(80, 45, 45, 0.733);
+    color: rgba(255, 255, 255, 0.699);
+    border-radius: 15px;
 }

@@ -9,7 +9,10 @@
     .nav-links a{ 
         font-size: smaller;
     }
-    
+    .menu-button{
+        font-size: small;
+        
+    }
 
 }
 
