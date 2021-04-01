@@ -200,6 +200,7 @@ main img{
     border-radius: 15px;
     width: 100%;
     box-shadow: 2px 4px 20px 0px;
+    background-color: lightgray;
 }
 
 main section{

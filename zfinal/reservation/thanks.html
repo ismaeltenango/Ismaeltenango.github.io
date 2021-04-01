@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../Style/normalize.css">
+    <link rel='stylesheet' href='../reservation/css/reservation.css'>
+    <link rel='stylesheet' href='../reservation/css/reservation_queries.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Templeview - Reservation</title>
+</head>
+
+<body>
+    <h1>Temple View Hotel</h1>
+    <nav class='nav-bar'>
+        <div class='logo'>
+            <img src='../reservation/media/temple-logo.png' alt='temple view logo'> 
+        </div>
+        <ul class='nav-links'>
+            <li>
+                <a href="https://ismaeltenango.github.io/zfinal/homepage/home_page.html">home</a>
+            </li>
+            <li>
+                <a href="https://ismaeltenango.github.io/zfinal/temple/temple.html">temples</a>
+            </li>
+            <li>
+                <a href="https://ismaeltenango.github.io/zfinal/reservation/reservation.html">reservation</a>
+            </li>
+            <li>
+                <div class="right-menu">
+                    <a href="https://ismaeltenango.github.io/zfinal/services/services.html"><button class='menu-button'>services</button></a>
+                    <div class="dropdown-menu">
+                        <a href="https://ismaeltenango.github.io/zfinal/missionaries/missionaries.html">missionaries</a>
+                        <a href="https://ismaeltenango.github.io/zfinal/reception/reception.html">reception</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <img src="../reservation/media/ezgif.com-gif-maker.gif" alt="LDS temples gif" width="100%">
+    <script src='../reservation/js/reservation.js'></script>
+        <main>
+            <h2 class="formtitle" >Thank you for Choose<br>
+            ~ Temple Hotel View ~</h2>
+            
+            <section class='payment'>
+
+                <div class="box-content">
+            
+                    <h3>Payment</h3>
+                    <div class="inputs">
+                        <label class="name">Card Holder*<input id='enter' type="text" name="completename" minlength="5" placeholder="Jonh Doe"></label>
+                    </div>
+                    <div class="inputs">
+                        <label class="name">Card Number*</label><input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="nope" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                    </div>
+                    <div class="inputs2">
+                        <label class="name">Month* <input id='enter2' type="number" name="zipcode" placeholder="01" ></label>
+                        <label class="name">Year(00) <input id='enter2' type="number" name="zipcode" placeholder="01"></label>
+                        <label class="name">CVV*<span class="material-icons">help</span><input id='enter2' type="number" name="zipcode" placeholder="*  *  *"></label>
+                    </div>
+                    <div class="inputs">
+                    <label class="name">Billing Address <input id='enter' type="text" name="firstname" minlength="5"></label>
+                    </div>
+                    <label class='check'>ticket information:<br><input type='checkbox' name='audience' value='yes'> Same as billing address</label>
+            
+                    <p class="security"><span class="material-icons">lock</span>This is a secure transaction</p>
+                </div>
+                <br><br><a href='https://ismaeltenango.github.io/zfinal/homepage/home_page.html'>PAY</a>
+                </section>
+        </main>
+</body>
+</html>

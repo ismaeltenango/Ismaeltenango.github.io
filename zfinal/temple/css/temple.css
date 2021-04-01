@@ -54,15 +54,11 @@ section#temples div h2, p, a{
     padding: 5px;
 }
 
-section#temples img{
-    /* text-transform: uppercase; */
-    /* letter-spacing: 4px; */
-    /* font-size: 25px; */
+section#temples section.temple img{
     width: 100%;
     position: relative;
     margin-top: -8px;
 }
-
 
 h1{
     position: absolute;
