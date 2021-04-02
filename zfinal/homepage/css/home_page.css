@@ -296,3 +296,27 @@ strong{
     color: rgba(255, 255, 255, 0.699);
     border-radius: 15px;
 }
+div#maura{
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgb(199, 180, 156);
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+.mapouter{
+    width: 100%;
+    margin: 0 auto;
+}
+.youtube{
+    width: 35px;
+}
+#fixing{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+

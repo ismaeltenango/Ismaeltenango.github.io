@@ -25,6 +25,16 @@
         
     }
     
+    div#maura{
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1.5em;
+    }
+    div.col-sm{
+        margin:1.5em;
+    }
+    .row{
 
+        grid-template-columns: 1fr;
+    }
 }
 
