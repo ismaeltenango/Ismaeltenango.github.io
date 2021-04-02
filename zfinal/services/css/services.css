@@ -241,11 +241,6 @@ section p{
     font-size: larger;
     font-weight: 600;
 }
-h3{
-    font-size: 5em;
-    text-align: center;
-    grid-column: 1/4;
-}
 div#maura{
     margin: 0 auto;
     padding: 2em;
