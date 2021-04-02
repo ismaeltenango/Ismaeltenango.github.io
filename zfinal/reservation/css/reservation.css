@@ -446,3 +446,10 @@ div#maura{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+div.col-sm h3{
+    margin: 1.1em;
+    margin-bottom: 2em;
+}
+div.col-sm p{
+    margin: 1.4em;
+}
