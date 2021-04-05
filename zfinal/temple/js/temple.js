@@ -61,7 +61,7 @@ function buildTempleCard(temple){
                     <p>Current President: <b>${temple.presidents[temple.presidents.length-1]}</b></p>
                     <p>Address: <b>${temple.address1}</b></p>
                     <p>Phone Number: <b>${temple.phone}</b></p>
-                    <a href='#'>Make a Reseration</a>
+                    <a href='https://ismaeltenango.github.io/zfinal/reservation/reservation.html'>Make a Reseration</a>
                     </div>
                     <img src='${temple.imageurl}' alt='${temple.name}'>
                     `;
