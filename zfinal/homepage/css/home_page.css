@@ -312,7 +312,6 @@ div#maura{
 }
 #fixing{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .row{
     display: grid;
